@@ -7,7 +7,7 @@ var snowmaxsize=22
 var snowminsize=8
 var snowingzone=1
 
-// Do not edit below this line
+//
 var snow=new Array()
 var marginbottom
 var marginright
@@ -81,4 +81,4 @@ for (i=0;i<=snowmax;i++) {
 }
 if (browserok) {
   window.onload=initsnow
-}
+}
