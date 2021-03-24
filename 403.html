@@ -1,0 +1,216 @@
+<!--FRMFOX-PLOITECH present--><!--403-AESTHETIC----------><html><head> 
+  <meta charset="UTF-8">
+  <title>FRMFOX | 403 forbidden</title> 
+  <meta name="description" content="FRMFOX Present"> 
+  <link rel="icon" href="https://i.ibb.co/PwYBRTH/20200521-014413.png" meta="keywords"> 
+  <link rel="stylesheet" href="./style.css"> 
+  <style type="text/css" id="dcoder_stylesheet">body,
+html {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  background-image: url('https://i.ibb.co/2s9jrgz/Neon-Nature-Dark-i-Phone-Wallpapers.jpg');  
+  background-position:center;
+  background-attachment:fixed;
+  background-size: cover;
+  background-color: #000;
+}
+canvas{
+  filter: blur(1px);
+}
+.container{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title{
+  text-align: center;
+  
+  color: #fff;
+  font-family: poppins;
+  font-size: 2em;
+  letter-spacing: 12px;
+  font-weight: 600;
+
+}
+.contenido{
+  text-align: center;
+  color: #fff;
+  font-family: ubuntu, poppins;
+  font-size: em;
+  letter-spacing: 12px;
+  font-weight: 600;
+}
+button{
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  border: 3px solid red;
+  width: 400px;
+  height: 40px;
+  outline: none;
+  font-family: 'poppins';
+  font-size: 15 ;
+  }</style></head> 
+ <body> 
+  <canvas id="canvas"></canvas>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script> 
+  <div class="container"> 
+  <div class="title">
+     &gt;&gt; 403 Forbidden &lt;&lt; 
+  </div> 
+  <div class="contenido">
+     #calmdown - professional - takeover# 
+  </div> 
+    <br><br>
+   <center> 
+    <audio id="myVideo" autoplay="autoplay" class="w-50" loop> 
+    <source src="https://frmfox.coolpage.biz/Campur/Aurora%20-%20K-391%20NIGHTCORE.mp3" type="audio/mpeg"> 
+    </audio> 
+    <button onclick="playVid()" type="button">COPYRIGHT 2020 FRMFOX-PLOITECH</button> 
+    <script>
+                    var vid = document.getElementById("myVideo");
+                    // Play
+                    function playVid() {
+                      vid.play();
+                    }                   
+var message="Oops!! \n\nLu nyari apaan tod?";
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+      </script> 
+   </center> 
+  </div> 
+<script type="text/javascript" id="dcoder_script">const text = baffle('.title');
+text.set({
+  characters : 'qwertyuiopasdfgh8613611888',
+  speed: 150
+});
+
+text.start();
+text.reveal(70000);
+
+const text1 = baffle('.contenido');
+text1.set({
+  characters : 'qwertyuiopasdfgh8613611888',
+  speed: 150
+});
+text1.start();
+text1.reveal(5500);
+let c = init("canvas"),
+  w = (canvas.width = window.innerWidth),
+  h = (canvas.height = window.innerHeight);
+//initiation
+
+class firefly{
+  constructor(){
+    this.x = Math.random()*w;
+    this.y = Math.random()*h;
+    this.s = Math.random()*2;
+    this.ang = Math.random()*2*Math.PI;
+    this.v = this.s*this.s/4;
+  }
+  move(){
+    this.x += this.v*Math.cos(this.ang);
+    this.y += this.v*Math.sin(this.ang);
+    this.ang += Math.random()*20*Math.PI/180-10*Math.PI/180;
+  }
+  show(){
+    c.beginPath();
+    c.arc(this.x,this.y,this.s,0,2*Math.PI);
+    c.fillStyle="#fddba3";
+    c.fill();
+  }
+}
+
+let f = [];
+
+function draw() {
+  if(f.length < 100){
+    for(let j = 0; j < 10; j++){
+     f.push(new firefly());
+  }
+     }
+  //animation
+  for(let i = 0; i < f.length; i++){
+    f[i].move();
+    f[i].show();
+    if(f[i].x < 0 || f[i].x > w || f[i].y < 0 || f[i].y > h){
+       f.splice(i,1);
+       }
+  }
+}
+
+let mouse = {};
+let last_mouse = {};
+
+canvas.addEventListener(
+  "mousemove",
+  function(e) {
+    last_mouse.x = mouse.x;
+    last_mouse.y = mouse.y;
+
+    mouse.x = e.pageX - this.offsetLeft;
+    mouse.y = e.pageY - this.offsetTop;
+  },
+  false
+);
+function init(elemid) {
+  let canvas = document.getElementById(elemid),
+    c = canvas.getContext("2d"),
+    w = (canvas.width = window.innerWidth),
+    h = (canvas.height = window.innerHeight);
+  c.fillStyle = "rgba(30,30,30,1)";
+  c.fillRect(0, 0, w, h);
+  return c;
+}
+
+window.requestAnimFrame = (function() {
+  return (
+    window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    function(callback) {
+      window.setTimeout(callback);
+    }
+  );
+});
+
+function loop() {
+  window.requestAnimFrame(loop);
+  c.clearRect(0, 0, w, h);
+  draw();
+}
+
+window.addEventListener("resize", function() {
+  (w = canvas.width = window.innerWidth),
+  (h = canvas.height = window.innerHeight);
+  loop();
+});
+
+loop();
+setInterval(loop, 1000 / 60);</script></body></html>
